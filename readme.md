@@ -3,10 +3,12 @@
 It is a demo project for demonstrating what can be generated with [QuickAdminPanel](https://quickadminpanel.com) tool.
 Larancer is all generated with __QuickAdmin__ except for custom code for __Reports__ functionality.
 
+![Larancer screenshot](http://webcoderpro.com/larancer-demo.png)
+
 ## How to use
 
 - Clone the repository with __git clone__
-- Edit credentials in your __.env__ file
+- Copy __.env.example__ file to __.env__ and edit database credentials there
 - Run __composer install__
 - Run __php artisan key:generate__
 - Run __php artisan migrate --seed__ (it has some seeded data for your testing)
