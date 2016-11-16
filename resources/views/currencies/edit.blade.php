@@ -38,8 +38,8 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     {!! Form::label('main_currency', 'Main currency', ['class' => 'control-label']) !!}
-                    {!! Form::hidden('main_currency', 0) !!}
-                    {!! Form::checkbox('main_currency', 1, old('main_currency', 0), ['class' => 'form-control']) !!}
+                    {!! Form::hidden('main_currency_old', $currency->main_currency) !!}
+                    {!! Form::checkbox('main_currency', 1, old('main_currency', $currency->main_currency), ['class' => 'form-control']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('main_currency'))
                         <p class="help-block">

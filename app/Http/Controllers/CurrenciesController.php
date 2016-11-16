@@ -68,10 +68,15 @@ class CurrenciesController extends Controller
     public function update(UpdateCurrenciesRequest $request, $id)
     {
         $currency = Currency::findOrFail($id);
-        if ($request->main_currency == 1) {
+        if ($request->main_currency == 1 && $request->main_currency_old == 0) {
             $currency_old_main = Currency::where('main_currency', '=', 1)->first();
-            $currency_old_main->main_currency = 0;
-            $currency_old_main->save();
+            if ($currency_old_main) {
+                $currency_old_main->main_currency = 0;
+                $currency_old_main->save();
+            }
+        }
+        if (!$request->main_currency) {
+            $request->request->add(['main_currency' => 0]);
         }
         $currency->update($request->all());
 
