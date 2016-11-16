@@ -14,7 +14,9 @@
 
         <div class="top-menu">
             <ul class="nav navbar-nav pull-right">
-
+                <li>
+                    <a href="https://quickadminpanel.com" target="_blank">Powered by QuickAdmin</a>
+                </li>
             </ul>
         </div>
     </div>
