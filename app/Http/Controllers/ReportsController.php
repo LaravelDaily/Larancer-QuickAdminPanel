@@ -24,7 +24,7 @@ class ReportsController extends Controller
             ->with('currency')
             ->orderBy('transaction_date', 'desc');
 
-        if ($request->has('project')) {
+        if ($request->has('project') && !empty($request->project)) {
             $q->where('project_id', $request->project);
         }
 

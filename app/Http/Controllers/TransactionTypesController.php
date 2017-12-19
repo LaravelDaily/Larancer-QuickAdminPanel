@@ -55,7 +55,7 @@ class TransactionTypesController extends Controller
     {
         $transaction_type = TransactionType::findOrFail($id);
 
-        return view('transaction_types.edit', compact('transactiontype'));
+        return view('transaction_types.edit', compact('transaction_type'));
     }
 
     /**
