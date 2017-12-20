@@ -1,4 +1,4 @@
-# Larancer: Laravel 5.3 based system for freelancers to manage their clients/projects/income
+# Larancer: Laravel 5.5 based system for freelancers to manage their clients/projects/income
 
 It is a demo project for demonstrating what can be generated with [QuickAdminPanel](https://quickadminpanel.com) tool.
 Larancer is all generated with __QuickAdmin__ except for custom code for __Reports__ functionality.
