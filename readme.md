@@ -3,6 +3,15 @@
 It is a demo project for demonstrating what can be generated with [QuickAdminPanel](https://quickadminpanel.com) tool.
 Larancer is all generated with __QuickAdmin__ except for custom code for __Reports__ functionality.
 
+__Notice__: we recently released a special Vue.js+Laravel version: [LaravelDaily/Larancer-Vue](https://github.com/LaravelDaily/Larancer-Vue)
+
+## Clickable live-demo
+
+[demo-larancer.quickadminpanel.com](http://demo-larancer.quickadminpanel.com)
+
+- __Email__: admin@admin.com
+- __Pass__: password
+
 ![Larancer screenshot](http://webcoderpro.com/larancer-demo.png)
 
 ## How to use
