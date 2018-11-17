@@ -12,7 +12,7 @@ __Notice__: we recently released a special Vue.js+Laravel version: [LaravelDaily
 - __Email__: admin@admin.com
 - __Pass__: password
 
-![Larancer screenshot](http://webcoderpro.com/larancer-demo.png)
+![Larancer screenshot](https://quickadminpanel.com/assets/pages/demos/demo-larancer-01.png)
 
 ## How to use
 
