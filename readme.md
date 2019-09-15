@@ -1,9 +1,11 @@
 # Larancer: Laravel 5.5 based system for freelancers to manage their clients/projects/income
 
+__Notice__: we've released a new Laravel 6 based version called [Freelancer CRM](https://github.com/LaravelDaily/QuickAdminPanel-Freelancer-CRM)
+
+- - - - -
+
 It is a demo project for demonstrating what can be generated with [QuickAdminPanel](https://quickadminpanel.com) tool.
 Larancer is all generated with __QuickAdmin__ except for custom code for __Reports__ functionality.
-
-__Notice__: we recently released a special Vue.js+Laravel version: [LaravelDaily/Larancer-Vue](https://github.com/LaravelDaily/Larancer-Vue)
 
 ## Clickable live-demo
 
