@@ -50,4 +50,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('transactions_mass_destroy', ['uses' => 'TransactionsController@massDestroy', 'as' => 'transactions.mass_destroy']);
     Route::resource('reports', 'ReportsController');
 
+    # Learning:
+    Route::resource('article-categories', 'ArticleCategoriesController');
+    Route::post('article-categories_mass_destroy', ['uses' => 'ArticleCategoriesController@massDestroy', 'as' => 'article-categories.mass_destroy']);
+    Route::resource('articles', 'ArticlesController');
+    Route::post('articles_mass_destroy', ['uses' => 'ArticlesController@massDestroy', 'as' => 'articles.mass_destroy']);
+
 });

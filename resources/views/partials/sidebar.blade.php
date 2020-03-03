@@ -48,64 +48,91 @@
                     <span class="title">Reports</span>
                 </a>
             </li>
+
+            {{--Learning--}}
             <li>
-                        <a href="#">
-                            <i class="fa fa-gears"></i>
-                            <span class="title">Settings</span>
-                            <span class="fa arrow"></span>
+                <a href="#">
+                    <i class="fa fa-file-text-o"></i>
+                    <span class="title">Learning Section</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="{{ $request->segment(1) == 'articles' ? 'active active-sub' : '' }}">
+                        <a href="{{ route('articles.index') }}">
+                            <i class="fa fa-file-text-o"></i>
+                            <span class="title">Articles</span>
                         </a>
-                        <ul class="sub-menu">
-                                <li class="{{ $request->segment(1) == 'currencies' ? 'active active-sub' : '' }}">
-                                    <a href="{{ route('currencies.index') }}">
-                                        <i class="fa fa-money"></i>
-                                        <span class="title">
-                                            Currencies
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="{{ $request->segment(1) == 'transaction_types' ? 'active active-sub' : '' }}">
-                                    <a href="{{ route('transaction_types.index') }}">
-                                        <i class="fa fa-exchange"></i>
-                                        <span class="title">
-                                            Transaction Types
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="{{ $request->segment(1) == 'income_sources' ? 'active active-sub' : '' }}">
-                                    <a href="{{ route('income_sources.index') }}">
-                                        <i class="fa fa-database"></i>
-                                        <span class="title">
-                                            Income Sources
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="{{ $request->segment(1) == 'client_statuses' ? 'active active-sub' : '' }}">
-                                    <a href="{{ route('client_statuses.index') }}">
-                                        <i class="fa fa-server"></i>
-                                        <span class="title">
-                                            Client Statuses
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="{{ $request->segment(1) == 'project_statuses' ? 'active active-sub' : '' }}">
-                                    <a href="{{ route('project_statuses.index') }}">
-                                        <i class="fa fa-server"></i>
-                                        <span class="title">
-                                            Project Statuses
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="{{ $request->segment(1) == 'roles' ? 'active active-sub' : '' }}">
-                                    <a href="{{ route('roles.index') }}">
-                                        <i class="fa fa-key"></i>
-                                        <span class="title">
-                                            Roles
-                                        </span>
-                                    </a>
-                                </li>
-                                </ul>
                     </li>
-                                    @if(Auth::user()->role_id == 1)
+                </ul>
+            </li>
+            {{--End Learning--}}
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-gears"></i>
+                    <span class="title">Settings</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="{{ $request->segment(1) == 'article-categories' ? 'active active-sub' : '' }}">
+                        <a href="{{ route('article-categories.index') }}">
+                            <i class="fa fa-server"></i>
+                            <span class="title">
+                                Article Categories
+                            </span>
+                        </a>
+                    </li>
+                    <li class="{{ $request->segment(1) == 'currencies' ? 'active active-sub' : '' }}">
+                        <a href="{{ route('currencies.index') }}">
+                            <i class="fa fa-money"></i>
+                            <span class="title">
+                                Currencies
+                            </span>
+                        </a>
+                    </li>
+                    <li class="{{ $request->segment(1) == 'transaction_types' ? 'active active-sub' : '' }}">
+                        <a href="{{ route('transaction_types.index') }}">
+                            <i class="fa fa-exchange"></i>
+                            <span class="title">
+                                Transaction Types
+                            </span>
+                        </a>
+                    </li>
+                    <li class="{{ $request->segment(1) == 'income_sources' ? 'active active-sub' : '' }}">
+                        <a href="{{ route('income_sources.index') }}">
+                            <i class="fa fa-database"></i>
+                            <span class="title">
+                                Income Sources
+                            </span>
+                        </a>
+                    </li>
+                    <li class="{{ $request->segment(1) == 'client_statuses' ? 'active active-sub' : '' }}">
+                        <a href="{{ route('client_statuses.index') }}">
+                            <i class="fa fa-server"></i>
+                            <span class="title">
+                                Client Statuses
+                            </span>
+                        </a>
+                    </li>
+                    <li class="{{ $request->segment(1) == 'project_statuses' ? 'active active-sub' : '' }}">
+                        <a href="{{ route('project_statuses.index') }}">
+                            <i class="fa fa-server"></i>
+                            <span class="title">
+                                Project Statuses
+                            </span>
+                        </a>
+                    </li>
+                    <li class="{{ $request->segment(1) == 'roles' ? 'active active-sub' : '' }}">
+                        <a href="{{ route('roles.index') }}">
+                            <i class="fa fa-key"></i>
+                            <span class="title">
+                                Roles
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            @if(Auth::user()->role_id == 1)
             <li class="{{ $request->segment(1) == 'users' ? 'active' : '' }}">
                 <a href="{{ route('users.index') }}">
                     <i class="fa fa-users"></i>

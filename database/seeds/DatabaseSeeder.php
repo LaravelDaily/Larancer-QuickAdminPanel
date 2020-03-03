@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
         $this->call(TransactionTypeSeed::class);
         $this->call(TransactionSeed::class);
         $this->call(UserSeed::class);
+        $this->call(ArticleCategorySeed::class);
+        $this->call(ArticleSeed::class);
         $this->command->info('Seeds finished successfully. Admin email: admin@admin.com, Password: password');
 
     }
